@@ -35,5 +35,9 @@ for (let i = 0; i < content.length; i++) {
   if (userInput.toLowerCase() === content[i].answer) {
     alert(`Correct! Your score is ${totalScore + content[i].score}`);
     totalScore = totalScore + content[i].score;
+  } else {
+    alert(
+      `Nope! The correct answer is ${content[i].answer}. Your score  is ${totalScore}`
+    );
   }
 }
